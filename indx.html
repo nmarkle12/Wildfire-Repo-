@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pennsylvania Wildfire Danger</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background: #243b2f;
+      color: white;
+      padding: 16px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.35rem;
+    }
+
+    header p {
+      margin: 6px 0 0;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .notice {
+      background: #fff8e1;
+      border-left: 5px solid #d99a00;
+      padding: 12px 16px;
+      margin: 14px;
+      font-size: 0.95rem;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 14px;
+    }
+
+    .button-row a {
+      display: inline-block;
+      padding: 10px 14px;
+      background: #2f5d46;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+    .button-row a:hover {
+      background: #1f3f30;
+    }
+
+    .map-container {
+      margin: 14px;
+      background: white;
+      border: 1px solid #ccc;
+      height: 78vh;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      font-size: 0.8rem;
+      color: #555;
+      padding: 12px 16px 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Pennsylvania Wildfire Danger</h1>
+    <p>Live/updated fire danger reference for situational awareness.</p>
+  </header>
+
+  <div class="notice">
+    This page displays the Pennsylvania DCNR Wildfire Danger Forecast Map.
+    Conditions can change quickly. Always follow official guidance from PA DCNR,
+    local emergency management, and the National Weather Service.
+  </div>
+
+  <div class="button-row">
+    <a href="https://elibrary.dcnr.pa.gov/GetDocument?DocName=fire+danger+forecast+map.pdf&docId=3602301" target="_blank">
+      Open PA DCNR Forecast Map
+    </a>
+
+    <a href="https://elibrary.dcnr.pa.gov/GetDocument?DocName=observed+fire+danger+map.pdf&docId=3602284" target="_blank">
+      Open PA DCNR Observed Map
+    </a>
+
+    <a href="https://www.weather.gov/fire/" target="_blank">
+      NWS Fire Weather
+    </a>
+
+    <a href="https://livingatlas.arcgis.com/wildfireaware/" target="_blank">
+      Esri Wildfire Aware
+    </a>
+  </div>
+
+  <div class="map-container">
+    <iframe
+      src="https://elibrary.dcnr.pa.gov/GetDocument?DocName=fire+danger+forecast+map.pdf&docId=3602301"
+      title="Pennsylvania DCNR Wildfire Danger Forecast Map">
+    </iframe>
+  </div>
+
+  <footer>
+    Source: Pennsylvania Department of Conservation and Natural Resources.
+    This page is a convenience viewer and does not replace official emergency guidance.
+  </footer>
+</body>
+</html>
